@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+body{
+    
+    margin: 0;
+    padding: 0 24px;
+    background-image: url("login3.jpg");
+    background-position: center ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: bolder;
+    font-family: "Porsche Next','Arial Narrow','Poppins', sans-serif";
+    color: white; 
+    
+}
+
+input[type=text], input[type=password] {
+  width: 50%;
+  padding: 15px;
+  margin: 5px 0 2px 0;
+  display: inline-block;
+  border: none;
+ 
+}
+
+hr {
+  border: 3px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+button {
+  background-color: blue;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f43636;
+}
+.container {
+  padding: 100px;
+ 
+}
+
+</style>
+<body>
+
+<form action="data.php">
+  <div class="container">
+    <h1>Sign Up</h1>
+    <p>Fill The Form if You Already Have Account</p>
+    <hr>
+    <label for="email">Email</label>
+    <br>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+<br>
+    <label for="password">Password</label>
+    <br>
+    <input type="password" placeholder="Enter Password" name="password" id="password" required>
+<br>
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+<br>
+    <div class="clearfix">
+      <button type="reset" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn" onClick="location.href='home.html'">Sign Up</button>
+    </div>
+  </div>
+</form>
+
+</body>
+</html>

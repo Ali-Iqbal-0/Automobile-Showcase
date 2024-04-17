@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanks for registration</title>
+    <style>
+        body {
+          background-image: url('thanku.jpeg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+        }
+        </style>
+   
+</head>
+<body>
+    <div style="text-align:center;">
+        <h1>Thank you for your Registration!</h1>
+        <p>This page will redirect to Home in <span id="timer"></span>s.</p>
+    </div>
+    <script type="text/javascript">
+        var count = 5;
+        var redirect = "home.html";
+        
+        function countDown() {
+            if(count >= 0){
+                document.getElementById("timer").innerHTML = count--;
+                setTimeout("countDown()", 1000);
+            }else{
+                window.location.href = redirect;
+            }
+        }
+        countDown();
+    </script>
+    
+
+</body>
+</html>
